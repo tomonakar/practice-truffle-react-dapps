@@ -7,7 +7,7 @@ import contractJson from "../build/contracts/Oracle.json"
 const web3 = new Web3("ws://127.0.0.1:7545")
 
 // Ganacheからアドレスを取得
-const addressContract = ""
+const addressContract = "0x5775897c39291A388E7C326DaA44f0fD047E3C4C"
 const contractInstance = new web3.eth.Contract(
   contractJson.abi,
   addressContract,

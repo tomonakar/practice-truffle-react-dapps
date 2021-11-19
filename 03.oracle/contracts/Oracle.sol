@@ -1,4 +1,4 @@
-// SPDX-Licencse-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract Oracle {
@@ -16,11 +16,11 @@ contract Oracle {
         _;
     }
 
-    function update(uint256 num) public onlyOwner {
+    function update() public onlyOwner {
         emit __callbackNewData();
     }
 
-    function setNumberAsteroids(uint256 num) public onlyOwner {
-        numberAsteroids = num;
+    function setNumberAsteroids(uint256 _num) public onlyOwner {
+        numberAsteroids = _num;
     }
 }
